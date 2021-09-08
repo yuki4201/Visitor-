@@ -28,6 +28,8 @@ ER図：https://drive.google.com/file/d/17xI_YOmisrh8HBSwbCYba-1wsISzMOV4/view?u
 
 CRUD機能　Create, Read, Update, Delete
 
+機能一覧　https://docs.google.com/document/d/1dkOG-s76qapQc8OvilGCzwX2XRlhTYzegxhoYnfRj4I/edit?usp=sharing
+
 ## チャレンジ要素一覧
 https://docs.google.com/spreadsheets/d/18xk2v53wL-xYXCnJ0cSUkP5J1qO4bwXxDd3XfYX5Vz8/edit?usp=sharing
 
