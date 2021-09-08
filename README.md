@@ -1,13 +1,17 @@
 # visitors
 
 ## サイト概要
-ユーザが実際に利用した宿泊先を、投稿したり参考にしたりする共有の場。レビューやシェアを行い、より良い旅を送れることを目指す
+本サイトでは、旅先で実際に泊まった宿を共有又は投稿したり、一人旅行に向けた旅行計画を立てることができる
+閲覧はできるが投稿などができない為、サイトを使用する際は新規登録かログインが必要。ソーシャルログイン機能を実装しているため、googleなどの既存のアカウントからログインすることが出来る
 
 ### サイトテーマ
-一人旅を手軽に行えるサイト
+一人旅を通じて利用者、観光業界ともに利益をもたらすサイト
 
 ### テーマを選んだ理由
-一人旅行をする時に宿泊人数が最低2人の宿泊先が多く、一人で泊まる場所を探すのに苦労した、という経験を基に、一人旅行に特化した宿泊先リストをまとめたアプリがあったらいいなということでこのテーマを選びました
+このご時世、複数人で旅行に行けない中、一人で旅行を行うにも1人から予約を受け付けている宿泊先が見つからないことが多いです
+一人で泊まれる宿泊先の共有により、宿泊施設を利用する人が増え、観光業界を盛りあげられることが期待できると考えました
+また、利用者は宿泊先の検索に時間を取られることなく、気軽に旅を楽しむことが出来ると思います
+他の人が調べたり、実際に利用した宿を共有できる場があればいいなという想いでこのテーマにしました
 
 ### ターゲットユーザ
 一人で旅行をしたいと考えている学生・社会人
@@ -20,7 +24,9 @@
 
 ER図：https://drive.google.com/file/d/17xI_YOmisrh8HBSwbCYba-1wsISzMOV4/view?usp=sharing
 
-アプリケーション詳細設計書：https://docs.google.com/spreadsheets/d/14ey5LuMO97oQNTQrsA8CPXItFgr1cXai/edit?usp=sharing&ouid=110608054919196247547&rtpof=true&sd=true
+アプリケーション詳細設計書：https://docs.google.com/spreadsheets/d/1vX5Fe4RzGEI84xDtw9qimK1VT6qdfrjFmKGdPDN45VM/edit?usp=sharing
+
+CRUD機能　Create, Read, Update, Delete
 
 ## チャレンジ要素一覧
 https://docs.google.com/spreadsheets/d/18xk2v53wL-xYXCnJ0cSUkP5J1qO4bwXxDd3XfYX5Vz8/edit?usp=sharing
@@ -33,6 +39,4 @@ https://docs.google.com/spreadsheets/d/18xk2v53wL-xYXCnJ0cSUkP5J1qO4bwXxDd3XfYX5
 - IDE：Cloud9
 
 ## 使用素材
-- 外部サービスの画像素材・音声素材を使用した場合は、必ずサービス名とURLを明記してください。
-- 使用しない場合は、使用素材の項目をREADMEから削除してください。
 - 「ぱくたそ」 https://www.pakutaso.com
