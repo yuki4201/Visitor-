@@ -16,7 +16,9 @@
           　<%= @plan.schedule %>
           </br>
           <label for="meal" class="col-sm-2">食事(朝・昼・夜)</label>
-            <% if @plan.meal == "1" %>
+            <% if @plan.meal == "0" %>
+              <%= '  ' %>
+            <% elsif @plan.meal == "1" %>
               <%= '朝' %>
             <% elsif @plan.meal == "2" %>
               <%= '昼' %>
@@ -31,8 +33,8 @@
             <%= @plan.lodgment_target_name %>
           </br>
         </form>
-    　　    <%= link_to "editing", edit_users_plan_path, class: "btn btn-success" %>
-    　　    <%= link_to "delete", users_plan_path(@plan), method: :delete, class: "btn btn-danger", "data-confirm" => "本当に削除しますか？" %>
+          <%= link_to "editing", edit_users_plan_path, class: "btn btn-success" %>
+          <%= link_to "delete", users_plan_path(@plan), method: :delete, class: "btn btn-danger", "data-confirm" => "本当に削除しますか？" %>
       </div>
     </div>
   </div>

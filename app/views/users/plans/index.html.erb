@@ -23,8 +23,10 @@
                <td><%= link_to plan.time, users_plan_path(plan) %></td> #年しか表示されない
                <td><%= plan.schedule %></td>
               <td>
-                <% if plan.meal == "1" %>
-                 <%= '朝' %>
+                <% if plan.meal == "0" %>
+                 <%= ' ' %>
+                <% elsif plan.meal == "1" %>
+                  <%= '昼' %>
                 <% elsif plan.meal == "2" %>
                   <%= '昼' %>
                 <% else %>
