@@ -11,8 +11,11 @@ class Users::PostsController < ApplicationController
   
   def create
     @post = Post.new(post_params)
-    @post.save
-    redirect_to users_posts_path
+    if @post.save
+      redirect_to users_posts_path
+    else
+      render :new
+    end
   end
   
   def show

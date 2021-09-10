@@ -1,4 +1,4 @@
-class Users::PlansController < ApplicationController
+class Users::UsersController < ApplicationController
     
   def show
     @user = current_user

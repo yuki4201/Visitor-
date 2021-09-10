@@ -20,9 +20,9 @@
           </div>
         </div>
         <div class="form-group row">
-          <label for="genre" class="col-sm-2">食事(朝・昼・夜)</label>
+          <label for="meal" class="col-sm-2">食事(朝・昼・夜)</label>
           <div class="col-sm-10">
-            <%= f.select :genre, { '朝':1, '昼':2,'夜':3 }, {include_blank: '---'} %>
+            <%= f.select :meal, { '朝':1, '昼':2,'夜':3 }, {include_blank: '---'} %>
           </div>
         </div>
         <div class="form-group row">
@@ -38,9 +38,9 @@
           </div>
         </div>
         <div class="form-group row">
-          <label for="" class="col-sm-2">宿泊先名</label>
+          <label for="" class="col-sm-2"></label>
           <div class="col-sm-10">
-          <%= f.submit "UPLOAD!" %></br>
+          <%= f.submit "UPLOAD!", class: "btn btn-primary btn-block" %></br>
         </div>
           <% end %>
         </div>

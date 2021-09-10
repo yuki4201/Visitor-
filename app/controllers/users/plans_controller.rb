@@ -11,8 +11,11 @@ class Users::PlansController < ApplicationController
   
   def create
     @plan = Plan.new(plan_params)
-    @plan.save
-    redirect_to users_plans_path
+    if @plan.save
+      redirect_to users_plans_path
+    else
+      render :new
+    end
   end
   
   def show

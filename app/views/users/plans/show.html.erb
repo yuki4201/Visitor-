@@ -16,8 +16,14 @@
           　<%= @plan.schedule %>
           </br>
           <label for="meal" class="col-sm-2">食事(朝・昼・夜)</label>
-            <%= @plan.meal %>
-          </br>
+            <% if @plan.meal == "1" %>
+              <%= '朝' %>
+            <% elsif @plan.meal == "2" %>
+              <%= '昼' %>
+            <% else %>
+              <%= '夜' %>
+            <% end %>
+          </br>　
           <label for="city_name" class="col-sm-2">都市名</label>
             <%= @plan.city_name %>
           </br>

@@ -12,7 +12,7 @@
           <label for="" class="col-sm-2"></label>
             <%= %>
           </br>
-          <label for="" class="col-sm-2">ジャンル</label>
+          <label for="genre" class="col-sm-2">ジャンル</label>
             <% if @post.genre == "1" %>
               <%= 'ホテル' %>
             <% elsif @post.genre == "2" %>
@@ -21,23 +21,23 @@
               <%= '民宿' %>
             <% end %>
           </br>
-          <label for="" class="col-sm-2">施設名</label>
+          <label for="facility_name" class="col-sm-2">施設名</label>
             <%= @post.facility_name %>
           </br>
-          <label for="" class="col-sm-2">所在地</label>
+          <label for="address" class="col-sm-2">所在地</label>
             <%= @post.address %>
           </br>
-          <label for="" class="col-sm-2">レビュー</label>
+          <label for="review" class="col-sm-2">レビュー</label>
             <%= @post.review %>
           </br>
-          <label for="" class="col-sm-2">朝食の有無</label>
+          <label for="breakfast_existence" class="col-sm-2">朝食の有無</label>
             <% if @post.breakfast_existence? %>
             朝食有り
             <% else %>
             朝食無し
             <% end %>
           </br>
-          <label for="" class="col-sm-2">掲載元URL</label>
+          <label for="url" class="col-sm-2">掲載元URL</label>
             <%= @post.url %>
           </br>
         </form>

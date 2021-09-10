@@ -22,7 +22,15 @@
              <tr>
                <td><%= link_to plan.time, users_plan_path(plan) %></td> #年しか表示されない
                <td><%= plan.schedule %></td>
-               <td><%= plan.meal %></td>
+              <td>
+                <% if plan.meal == "1" %>
+                 <%= '朝' %>
+                <% elsif plan.meal == "2" %>
+                  <%= '昼' %>
+                <% else %>
+                  <%= '夜' %>
+                <% end %>
+               </td>
                <td><%= plan.city_name %></td>
                <td><%= plan.lodgment_target_name %></td>
              </tr>
