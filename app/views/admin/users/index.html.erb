@@ -15,6 +15,7 @@
               <th>ユーザーネーム</th>
               <th>メールアドレス</th>
               <th>ステータス</th>
+              <th>退会</th>
             </tr>
           </thead>
           <tbody>
@@ -30,6 +31,7 @@
               <% else %>
               <td>退会済み</td>
               <% end %>
+               <td><%= link_to "退会", admin_withdraw_path(@user), method: :patch, "data-confirm" => "本当に退会しますか?", class: "btn btn-danger" %></td>
               </tr>
             <% end %>
           </tbody>

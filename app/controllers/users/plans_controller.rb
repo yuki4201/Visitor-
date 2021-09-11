@@ -11,6 +11,7 @@ class Users::PlansController < ApplicationController
   
   def create
     @plan = Plan.new(plan_params)
+    @plan.user_id = current_user.id
     if @plan.save
       redirect_to users_plans_path
     else
@@ -42,7 +43,7 @@ class Users::PlansController < ApplicationController
   private
   
   def plan_params
-    params.require(:plan).permit(:time, :schedule, :meal, :city_name, :lodgment_target_name)
+    params.require(:plan).permit(:date, :time, :schedule, :meal, :city_name, :lodgment_target_name)
   end
   
 end

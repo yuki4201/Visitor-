@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_09_09_135507) do
+ActiveRecord::Schema.define(version: 2021_09_11_122502) do
 
   create_table "admins", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -27,11 +27,13 @@ ActiveRecord::Schema.define(version: 2021_09_09_135507) do
   create_table "plans", force: :cascade do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer "date"
     t.integer "time"
     t.text "schedule"
     t.string "meal"
     t.string "city_name"
     t.string "lodgment_target_name"
+    t.integer "user_id"
   end
 
   create_table "posts", force: :cascade do |t|
@@ -44,6 +46,7 @@ ActiveRecord::Schema.define(version: 2021_09_09_135507) do
     t.text "review"
     t.text "url"
     t.boolean "breakfast_existence", default: true
+    t.integer "user_id"
   end
 
   create_table "users", force: :cascade do |t|

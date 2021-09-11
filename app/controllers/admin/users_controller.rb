@@ -5,18 +5,17 @@ class Admin::UsersController < ApplicationController
   end
   
   def show
-    @user = User.id
-    @post = User.id
-    @posts = Post.all
-    @plans = Plan.all
+    @user = User.find(params[:id])
+    @posts = @user.posts
+    @plans = @user.plans
   end
   
   def unsubscribe
-    @user = current_user # current_user.id? 特定のユーザを指定
+    @user = User.find(params[:id])
   end
   
   def withdraw
-    @user = current_user # current_user.id? 特定のユーザを指定
+    @user = User.find(params[:id])
     @user.update(is_active: false)
     reset_session
     redirect_to admin_users_path

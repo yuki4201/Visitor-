@@ -4,6 +4,7 @@ class CreatePlans < ActiveRecord::Migration[5.0]
 
       t.timestamps
       
+      t.integer :date
       t.integer :time
       t.text :schedule
       t.string :meal

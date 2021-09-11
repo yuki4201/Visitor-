@@ -31,7 +31,7 @@ class Admin::PostsController < ApplicationController
   
   def destroy
     @post = Post.find(params[:id])
-    @post.destroy(post_params)
+    @post.destroy
     redirect_to users_posts_path
   end
   

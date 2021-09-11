@@ -33,8 +33,8 @@
                </td>
                <td><%= post.facility_name %></td>
                <td><%= post.address %></td>
-               <td><%= link_to "editing", users_post_path(post), class: "btn btn-success" %></td>
-               <td><%= link_to "delete", root_path, method: :delete, class: "btn btn-danger", "data-confirm" => "本当に削除しますか？" %></td>
+               <td><%= link_to "editing", edit_admin_post_path(post), class: "btn btn-success" %></td>
+               <td><%= button_to "delete", admin_post_path(post), method: :delete, class: "btn btn-danger", "data-confirm" => "本当に削除しますか？" %></td>
              </tr>
              <% end %>
            </tbody>

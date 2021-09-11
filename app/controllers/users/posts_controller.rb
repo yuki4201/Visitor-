@@ -11,6 +11,7 @@ class Users::PostsController < ApplicationController
   
   def create
     @post = Post.new(post_params)
+    @post.user_id = current_user.id
     if @post.save
       redirect_to users_posts_path
     else
@@ -34,14 +35,14 @@ class Users::PostsController < ApplicationController
   
   def destroy
     @post = Post.find(params[:id])
-    @post.destroy(post_params)
+    @post.destroy
     redirect_to users_posts_path
   end
   
   private
   
   def post_params
-    params.require(:post).permit(:facility_name, :address, :genre, :review, :url, :breakfast_existence)
+    params.require(:post).permit(:image, :facility_name, :address, :genre, :review, :url, :breakfast_existence)
   end
   
 end

@@ -22,9 +22,9 @@ Rails.application.routes.draw do
     
     resources :users, only: [:index, :show]
     
-    get '/unsubscribe' => 'admin#unsubscribe', as: 'confirm_unsubscribe'
-    get '/withdraw' => 'admin#withdraw'
-    patch '/withdraw' => 'admin#withdraw' 
+    get '/unsubscribe' => 'users#unsubscribe', as: 'confirm_unsubscribe'
+    get '/withdraw' => 'users#withdraw'
+    patch '/withdraw' => 'users#withdraw'
     
   end
 
